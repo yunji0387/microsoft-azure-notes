@@ -12,6 +12,13 @@
 <!-- MarkdownTOC -->
 
 ### Cloud computing
+- Cloud computing is the delivery of computing services over the internet.
+- Computing services include:
+  - IT infrastructure such as virtual machines, storage, databases, and networking
+  - Internet of Things (IoT)
+  - machine learning (ML)
+  - artificial intelligence (AI)
+
 
 ### Benefits of using cloud services
 
