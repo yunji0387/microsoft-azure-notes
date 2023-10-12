@@ -1,27 +1,64 @@
 # AZ-900: Microsoft Azure Fundamentals Notes
 
 ## Table of Contents
-- [Introduction to Azure Fundamentals](#module1)
-- [Azure Fundamental Concepts & Architectural Components](#module2)
-- [Azure Database, Analytics, & Compute Services](#module3)
-- [Azure Storage & Networking Services](#module4)
+- [Cloud concepts](#module1)
+- [Azure architecture and services](#module2)
+- [Azure management and governance](#module3)
 
 <a id="module1"></a>
-## Introduction to Azure Fundamentals
-- ..
+## Cloud concepts
+<details close>
+<summary><b>(click to expand/hide)</b></summary>
+<!-- MarkdownTOC -->
+
+### Cloud computing
+
+### Benefits of using cloud services
+
+### Cloud service types
+
+<!-- /MarkdownTOC -->
+</details>
+
+---
 
 <a id="module2"></a>
-## Azure Fundamental Concepts & Architectural Components
-- ..
+## Azure architecture and services
+<details close>
+<summary><b>(click to expand/hide)</b></summary>
+<!-- MarkdownTOC -->
+
+### The core architectural components of Azure
+
+### Azure compute and networking services
+
+### Azure storage services
+
+### Azure identity, access, and security
+
+<!-- /MarkdownTOC -->
+</details>
+
+---
 
 <a id="module3"></a>
-## Azure Database, Analytics, & Compute Services
-- ..
+## Azure management and governance
+<details close>
+<summary><b>(click to expand/hide)</b></summary>
+<!-- MarkdownTOC -->
 
-<a id="module4"></a>
-## Azure Storage & Networking Services
-- ..
+### Cost management in Azure
 
+### Features and tools in Azure for governance and compliance
+
+### Features and tools for managing and deploying Azure resources
+
+### Monitoring tools in Azure
+
+<!-- /MarkdownTOC -->
+</details>
+
+---
 
 <a id="resources"></a>
 ## Resources
