@@ -103,17 +103,31 @@ Each resource in separate groups:
 
 ---
 
-# Azure Subscriptions
+### Azure Subscriptions
 
 An Azure subscription provides you with authenticated and authorized access to Azure accounts.
 
 - **Billing boundary**: Generate separate billing reports and invoices for each subscription.
 - **Access control boundary**: Manage and control access to the resources that users can provision with specific subscriptions.
 
-## Subscription Types:
+#### Subscription Types:
 
 - **Dev Subscription**
 - **Test Subscription**
 - **Production Subscription**
 
 **Note:** This markdown does not represent the visual diagram of the Azure Account and its associated subscriptions, billing accounts, and profiles. It is advised to refer to the actual diagram for a visual representation.
+
+---
+
+### Management Groups
+
+- Management groups can include multiple Azure subscriptions.
+- Subscriptions inherit conditions applied to the management group.
+- 10,000 management groups can be supported in a single directory.
+- A management group tree can support up to six levels of depth.
+
+**Note:** This markdown does not represent the visual hierarchy and relationships shown in the diagram. For a complete understanding, refer to the provided diagram.
+
+---
+
