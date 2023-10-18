@@ -194,8 +194,66 @@ An Update Domain is a logical grouping ensuring VMs aren't updated simultaneousl
 
 **Azure Containers** are a light-weight, virtualized environment that does not require operating system management, and can respond to changes on demand.
 
-## Azure Container Instances
+#### Azure Container Instances
 A PaaS offering that runs a container in Azure without the need to manage a virtual machine or additional services.
 
-## Azure Kubernetes Service
+#### Azure Kubernetes Service
 An orchestration service for containers with distributed architectures and large volumes of containers.
+
+---
+
+### Azure Functions
+
+- Event-based code running your service and not the underlying infrastructure.
+- **Serverless Computing**: Azure Functions are part of the serverless computing paradigm. In serverless computing, the code is event-driven.
+- **Event-Driven Architecture**: This allows for code to run in response to specific events, focusing on your service without managing the underlying infrastructure.
+
+---
+
+### Azure App Services
+
+Azure App Services is a fully managed platform to build, deploy, and scale web apps and APIs quickly. It provides services like HTTP and REST API.
+
+- **Supported Platforms**: Works with .NET, .NET Core, Node.js, Java, Python, or PHP.
+- **Features**: PaaS offering with enterprise-grade performance, security, and compliance requirements.
+
+---
+
+## Virtual Networking
+
+### Azure networking services
+
+**Azure Virtual Network (VNet)** enables Azure resources to communicate with each other, the internet, and on-premises networks.
+- Public endpoints, accessible from anywhere on the internet
+- Private endpoints, accessible only from within your network
+- Virtual subnets, segment your network to suit your needs
+- Network peering, connect your private networks directly together
+
+**RDP ??????**
+
+---
+
+### Azure Virtual Private Network Gateway
+
+**Virtual Private Network Gateway (VPN)** is used to send encrypted traffic between an Azure virtual network and an on-premises location over the public internet.
+
+---
+
+### Azure ExpressRoute
+
+**Azure ExpressRoute** provides a direct extension of on-premises networks into Azure. This connection is not only facilitated by a trusted connectivity provider but also offers the following advantages:
+- **Enhanced Security**: Offers a more secure connection compared to traditional VPNs.
+- **Cost Implications**: While it's a premium service and can be more expensive, the benefits in terms of performance and security often justify the investment.
+
+---
+
+### Azure DNS
+
+- **Reliability and performance**: Leveraging a global network of DNS name servers using Anycast networking.
+- **Azure DNS security**: Based on Azure resource manager, enabling role-based access control and monitoring and logging.
+- **Ease of use**: For managing your Azure and external resources with a single DNS service.
+- **Customizable virtual networks**: Allow you to use private, fully customized domain names in your private virtual networks.
+- **Alias records**: Supports alias record sets to point directly to an Azure resource.
+
+---
+
