@@ -4,6 +4,7 @@
 - [Cloud concepts](#module1)
 - [Azure architecture and services](#module2)
 - [Azure management and governance](#module3)
+- [Resources](#resources)
 
 <a id="module1"></a>
 ## Cloud concepts
@@ -70,3 +71,5 @@
 <a id="resources"></a>
 ## Resources
 - [study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900)
+- [Microsoft Ignite](https://learn.microsoft.com/en-us/collections/o5met117w6pp01)
+- 
