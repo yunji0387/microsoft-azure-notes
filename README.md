@@ -63,7 +63,7 @@ Microsoft is China’s first foreign public cloud service provider, in complianc
 
 ---
 
-## Azure Resources
+### Azure Resources
 
 Azure **resources** are components like storage, virtual machines, and networks that are available to build cloud solutions.
 
@@ -75,3 +75,30 @@ Azure **resources** are components like storage, virtual machines, and networks 
 - **Functions**
 
 ---
+
+### Resource groups
+
+A **resource group** is a container to manage and aggregate resources in a single unit.
+
+- Resources can exist in only one resource group.
+- Resources can exist in different regions.
+- Resources can be moved to different resource groups.
+- Applications can utilize multiple resource groups.
+
+**Example:**
+
+Resource groups (web + DB, VM, Storage) in one group:
+- Web and DB resource group
+- Virtual machine resource group
+- Storage resource group
+
+_OR_
+
+Each resource in separate groups:
+- Web resource group
+- DB resource group
+- VM resource group
+- Storage resource group
+
+---
+
