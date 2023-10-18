@@ -131,3 +131,71 @@ An Azure subscription provides you with authenticated and authorized access to A
 
 ---
 
+### Azure Compute Services
+Azure **compute** is an on-demand computing service that provides computing resources such as disks, processors, memory, networking, and operating systems.
+
+- **Virtual Machines**
+- **App Services**
+- **Container Instances**
+- **Azure Kubernetes Services (AKS)**
+- **Azure Virtual Desktop**
+
+**Note:** The `path_to_icon` placeholders are meant to be replaced with actual paths or URLs to the respective icons if you wish to represent them in markdown.
+
+---
+
+### Azure virtual machines
+
+Azure **Virtual Machines (VM)** are software emulations of physical computers.
+
+- Includes virtual processor, memory, storage, and networking.
+- IaaS offering that provides total control and customization.
+
+**Note:** The `path_to_vm_icon_large` placeholder is meant to be replaced with the actual path or URL to the Azure VM icon.
+
+---
+
+### VM scale sets
+
+Scale sets provide a load-balanced opportunity to automatically scale resources.
+
+- Scale out when resource needs increase.
+- Scale in when resource needs are lower.
+
+**Note:** Replace `path_to_scale_sets_icon` with the actual path or URL to the VM Scale Sets icon for it to be displayed.
+
+---
+
+### VM availability sets
+
+VM availability sets help in ensuring that your application remains available during network failures, local disk hardware failures, and any unplanned maintenance events.
+
+#### Fault Domain (FD)
+
+A Fault Domain represents a physical unit in a data center, like a server rack. It ensures VMs aren't all on the same hardware, protecting against localized hardware failures.
+
+#### Update Domain (UD)
+
+An Update Domain is a logical grouping ensuring VMs aren't updated simultaneously during maintenance. This prevents all VMs from rebooting at the same time, ensuring service availability.
+
+---
+
+### Azure Virtual Desktop
+
+**Azure Virtual Desktop** is a desktop and app virtualization that runs in the cloud.
+
+1. **Create a full desktop virtualization environment** without having to run additional gateway servers.
+2. **Reduce risk** of resource being left behind.
+3. **True multi-session deployments**.
+
+---
+
+### Azure Container Services
+
+**Azure Containers** are a light-weight, virtualized environment that does not require operating system management, and can respond to changes on demand.
+
+## Azure Container Instances
+A PaaS offering that runs a container in Azure without the need to manage a virtual machine or additional services.
+
+## Azure Kubernetes Service
+An orchestration service for containers with distributed architectures and large volumes of containers.
