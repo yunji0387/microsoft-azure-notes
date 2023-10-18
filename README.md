@@ -84,7 +84,8 @@ A **resource group** is a container to manage and aggregate resources in a singl
 - Resources can exist in different regions.
 - Resources can be moved to different resource groups.
 - Applications can utilize multiple resource groups.
-
+- **Important:**
+  - once you delete a resource group, you also delete the resources in the resource group
 **Example:**
 
 Resource groups (web + DB, VM, Storage) in one group:
@@ -102,3 +103,17 @@ Each resource in separate groups:
 
 ---
 
+# Azure Subscriptions
+
+An Azure subscription provides you with authenticated and authorized access to Azure accounts.
+
+- **Billing boundary**: Generate separate billing reports and invoices for each subscription.
+- **Access control boundary**: Manage and control access to the resources that users can provision with specific subscriptions.
+
+## Subscription Types:
+
+- **Dev Subscription**
+- **Test Subscription**
+- **Production Subscription**
+
+**Note:** This markdown does not represent the visual diagram of the Azure Account and its associated subscriptions, billing accounts, and profiles. It is advised to refer to the actual diagram for a visual representation.
