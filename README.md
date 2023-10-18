@@ -15,7 +15,7 @@
 
 - **Preserve data residency with a comprehensive compliance offering.**
 
-## Availability zones
+### Availability zones
 
 - **Provide protection against downtime due to datacenter failure**: Availability zones are designed to protect your applications and data from datacenter failures.
   
