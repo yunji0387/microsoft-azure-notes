@@ -8,12 +8,15 @@
 
 
 ## Virtual Training Notes
+
 ### Regions
 - **Regions are made up of one or more datacenters in close proximity.**
 
 - **Provide flexibility and scale to reduce customer latency.**
 
 - **Preserve data residency with a comprehensive compliance offering.**
+
+---
 
 ### Availability zones
 
@@ -25,6 +28,8 @@
 
 - **Connected through private fiber-optic networks**: This ensures fast and secure communication between datacenters.
 
+---
+
 ### Region Pairs
 
 - ** Disaster recovery: Your resources will automatically replicated in the secondary region pair **
@@ -34,6 +39,8 @@
 - **Updates are rollout sequentially to minimize downtime.**
 
 [Web Link](https://aka.ms/PairedRegions)
+
+---
 
 ### Azure Sovereign Regions (US Government services)
 
@@ -53,3 +60,18 @@ Microsoft is China’s first foreign public cloud service provider, in complianc
 #### Azure China features:
 - **Physically separated instance of Azure cloud services operated by 21Vianet**
 - **All data stays within China to ensure compliance**
+
+---
+
+## Azure Resources
+
+Azure **resources** are components like storage, virtual machines, and networks that are available to build cloud solutions.
+
+- **Virtual Machines**
+- **Storage Accounts**
+- **Virtual Networks**
+- **App Services**
+- **SQL Databases**
+- **Functions**
+
+---
