@@ -259,4 +259,29 @@ Azure App Services is a fully managed platform to build, deploy, and scale web a
 
 ## Azure Storage
 
+???
 
+---
+
+## Azure Identity, Access, and Security
+
+???
+
+---
+
+### Cost Management in Azure
+
+???
+
+---
+
+## Azure governance and compliance, Azure resource management, and Azure monitoring services
+
+### Azure Blueprints
+
+**Azure Blueprints** makes it possible for development teams to rapidly build and stand up new environments. Development teams can quickly build trust through organizational compliance with a set of built-in components (such as networking) in order to speed up development and delivery.
+
+- **Role Assignments**
+- **Policy Assignments**
+- **Azure Resource Manager Templates**
+- **Resource Groups**
