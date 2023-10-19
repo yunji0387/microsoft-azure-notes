@@ -441,7 +441,7 @@ Azure offers several tools to handle individual files or smaller file groups in 
 
 ## Azure File Sync
 
-- **Description**: Syncs local Windows server file shares with Azure Files, effectively making your Windows server akin to a mini content delivery network.
+- **Description**: Syncs(bidirectional synchronization) local Windows server(on-premises) file shares with Azure(cloud) Files, effectively making your Windows server akin to a mini content delivery network.
 - **Features**:
     - Supports multiple protocols like SMB, NFS, and FTPS for local data access.
     - Allows numerous global caches.
