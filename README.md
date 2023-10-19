@@ -422,6 +422,34 @@ _Note: Once the data is uploaded to Azure, the disks on the device are wiped cle
 
 ---
 
+### Azure File Movement Options
+
+Azure offers several tools to handle individual files or smaller file groups in addition to large scale migrations. Here's a summary:
+
+## AzCopy
+
+- **Description**: A command-line utility for copying blobs or files to/from your Azure storage account.
+- **Features**: Upload, download, copy between storage accounts, and synchronization (one-direction only).
+
+> **Note**: AzCopy doesn't support bi-directional synchronization based on timestamps or other metadata.
+
+## Azure Storage Explorer
+
+- **Description**: A standalone application to manage files and blobs in Azure Storage. Operates on Windows, macOS, and Linux.
+- **Backend**: Uses AzCopy for all file and blob operations.
+- **Features**: Upload, download, and move files between Azure storage accounts.
+
+## Azure File Sync
+
+- **Description**: Syncs local Windows server file shares with Azure Files, effectively making your Windows server akin to a mini content delivery network.
+- **Features**:
+    - Supports multiple protocols like SMB, NFS, and FTPS for local data access.
+    - Allows numerous global caches.
+    - Easily replaces a local server in the same datacenter by installing Azure File Sync on a new server.
+    - Enables cloud tiering to balance frequently accessed files locally with infrequently accessed ones in the cloud.
+
+---
+
 ## Azure Identity, Access, and Security
 
 ???
