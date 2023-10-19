@@ -335,6 +335,60 @@ For high durability, data can be replicated to a secondary region distant from t
 
 > **Note**: Data in the secondary region might be outdated due to Recovery Point Objective (RPO).
 
+---
+
+### Azure Storage Services
+
+## Overview
+
+Azure Storage provides various data services optimized for durability, scalability, and accessibility.
+
+## Data Services
+
+### **1. Azure Blobs**
+- **Definition**: Azure Blob storage is an object storage solution for the cloud. It can store massive amounts of unstructured data.
+- **Usage Scenarios**:
+  - Serving images/documents to a browser.
+  - Storing files for distributed access.
+  - Streaming video and audio.
+  - Backup, restore, disaster recovery, and archiving.
+  - Storing data for analysis.
+- **Accessing**: Blobs can be accessed globally via HTTP/HTTPS using URLs, the Azure Storage REST API, Azure PowerShell, Azure CLI, or Azure Storage client libraries.
+- **Storage Tiers**:
+  - **Hot**: Frequent access (e.g., website images).
+  - **Cool**: Infrequent access, stored for 30+ days (e.g., monthly invoices).
+  - **Cold**: Rare access, stored for 90+ days.
+  - **Archive**: Rarely accessed, stored for 180+ days (e.g., long-term backups).
+
+### **2. Azure Files**
+- **Definition**: Azure File storage offers fully managed file shares accessible via SMB or NFS protocols.
+- **Key Benefits**:
+  - **Shared Access**: Supports SMB and NFS; replace on-premises file shares seamlessly.
+  - **Fully Managed**: No need for hardware or OS management.
+  - **Scripting & Tooling**: Managed using PowerShell, Azure CLI, Azure portal, and Azure Storage Explorer.
+  - **Resiliency**: Built for high availability.
+  - **Familiar Programmability**: Access data via file system I/O APIs, Azure Storage Client Libraries, or the Azure Storage REST API.
+
+### **3. Azure Queues**
+- Reliable messaging store.
+- Can store millions of messages, each up to 64 KB.
+- Useful for processing work asynchronously.
+
+### **4. Azure Disks**
+- Block-level storage volumes for Azure VMs.
+- Virtualized for greater resiliency and availability.
+
+### **5. Azure Tables**
+- NoSQL store for structured, non-relational data.
+- Accepts authenticated calls from both inside and outside Azure.
+
+## Benefits of Azure Storage
+
+- **Durable & Highly Available**: Redundant storage options.
+- **Secure**: Data encryption and controlled access.
+- **Scalable**: Handles massive data requirements.
+- **Managed**: Azure oversees hardware maintenance and critical issues.
+- **Accessible**: Globally available over HTTP/HTTPS with various client libraries.
 
 ---
 
