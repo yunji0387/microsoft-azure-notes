@@ -285,3 +285,181 @@ Azure App Services is a fully managed platform to build, deploy, and scale web a
 - **Policy Assignments**
 - **Azure Resource Manager Templates**
 - **Resource Groups**
+
+---
+
+### Azure Policy
+
+**Azure Policy** assists in enforcing organizational standards and evaluating compliance at scale. It ensures governance, resource consistency, security, cost management, and alignment with regulatory compliance.
+
+- **Evaluates Azure Resources**: Identifies resources that might not be in line with your policies.
+- **Policy and Initiative Definitions**: Offers predefined policies for various categories such as Storage, Networking, Compute, Security Center, and Monitoring.
+- **Azure DevOps Integration**: Seamlessly integrates with Azure DevOps, supporting continuous integration and ensuring compliance both pre-deployment and post-deployment.
+
+---
+
+### Resource locks
+
+- **Protect your Azure resources** from accidental deletion or modification.
+- **Manage locks** at subscription, resource group, or individual resource levels within Azure Portal.
+
+### Lock Types
+
+|           | Read | Update | Delete |
+|-----------|------|--------|--------|
+| Delete    | Yes  | Yes    | No     |
+| ReadOnly  | Yes  | No     | No     |
+
+---
+
+### Service Trust Portal
+
+- A Microsoft platform focusing on **trust**, **security**, and **compliance**.
+- Features:
+  - Access to **Trust Documents**.
+  - Details on specific **Industries & Regions**.
+  - Exploration of the **Trust Center**.
+  - Various **Resources** for users.
+  - Personal content management through **My Library**.
+  - Tools like **Whitepaper**, **Audit Report**, and **Compliance Manager** to ensure compliance standards.
+
+---
+
+## Azure resource management
+
+### Tools for interacting with Azure
+
+- **Azure portal**: A web-based unified console to manage all Azure services.
+- **Azure PowerShell**: A module offering cmdlets to manage Azure resources directly from the PowerShell command line.
+- **Azure Cloud Shell**: An interactive, browser-accessible shell for managing Azure resources.
+- **Command-Line Interface (CLI)**: A command-line tool to manage Azure resources using commands.
+
+---
+
+### Azure Resource Manager Overview
+
+**Azure Resource Manager (ARM)** offers a unified management layer, allowing users to:
+
+- **Create, update, and delete** resources in their Azure subscription.
+  
+### Tools and Services:
+- **Azure portal**, **Azure PowerShell**, and **Azure CLI**: Direct interfaces for management tasks.
+- **SDKs**: For programmatic access.
+- **Rest clients**: Another mode for developers to interact with ARM.
+
+### Core Components:
+- **Authentication**: Ensures secure access to resources.
+- **Resources**: Includes **Data Store**, **Web App**, **Virtual Machine**, **Service Management**, and other services.
+
+---
+
+### Azure Resource Manager (ARM) Templates
+
+**ARM Templates** are defined as **JavaScript Object Notation (JSON)** files. They allow users to:
+
+- **Deploy Azure infrastructure** without the need to write individual programming commands.
+
+### Key Features of ARM Templates:
+- **Declarative syntax**: Define "what" you want rather than "how".
+- **Repeatable results**: Ensure consistency across deployments.
+- **Orchestration**: Coordinate and manage the deployment of multiple resources.
+- **Modular files**: Break down templates for better organization and reuse.
+- **Built-in validation**: Check templates for errors before deployment.
+- **Exportable code**: Easily share and distribute your templates.
+
+### Visual Representation:
+- **Resource Manager Template**: Represents the main ARM template file. 
+- **Non-template Infrastructure as code**: Alternative methods to deploy resources using imperative PUT calls.
+
+Connected with **Azure Resource Manager** and **Resource Providers** for efficient deployment.
+
+---
+
+### Azure Arc Overview
+
+**Azure Arc** allows users to extend Azure services and management to any infrastructure, including:
+- **On-premises**
+- **Multicloud**
+- **Edge locations**
+
+### Main Components:
+
+1. **Customers**:
+   - Engage with Azure through various **tools and experiences**.
+   - Examples include the **Azure Portal**, **PowerShell**, and **Azure CLI**.
+
+2. **Azure**:
+   - At the heart of Azure Arc, serving as the main platform.
+   - Uses **Azure Resource Manager** for management with features like:
+     - **Single-pane-of-glass for management**: Centralized view for resources.
+     - **Role-based access control**: Define who can do what.
+     - **Cloud-native practices**: Implement standard practices for cloud deployments.
+     - **Security and Compliance**: Ensures that resources adhere to necessary compliance measures.
+     - **Resources in Azure**: Direct resources that reside in Azure.
+
+3. **Azure Arc**:
+   - **Extend Azure management** to other environments, such as on-premises, multicloud, and edge.
+   - Resources in these locations can be managed similarly to how resources are managed in Azure.
+   - **Local management tools** available for more specific or granular management at these locations.
+
+With Azure Arc, organizations can have a unified approach to manage resources irrespective of where they are located, offering flexibility and scalability.
+
+---
+
+## Azure Monitoring Services
+
+### Azure Advisor
+
+**Azure Advisor** analyzes deployed Azure resources and provides recommendations based on best practices to optimize Azure deployments.
+
+## Key Areas of Recommendation:
+
+- **Reliability**
+- **Security**
+- **Performance**
+- **Cost**
+- **Operational Excellence**
+
+### Recommendations Overview:
+
+#### 1. **Reliability**:
+   - Recommendations: `4`
+   - Impacted Resources: `122`
+
+#### 2. **Security**:
+   - Recommendations: `31`
+   - Impacted Resources: `218`
+
+#### 3. **Performance**:
+   - Status: You are following all of our performance recommendations.
+
+Azure Advisor serves as a guide to ensure your Azure resources are optimized and aligned with best practices.
+
+---
+
+### Azure Service Health
+
+Azure Service Health is a collection of services that keep you informed of general Azure status, service status that may impact you, and specific resource status that is impacting you.
+
+## Azure Status
+Global view of the health of all Azure services across all Azure regions.
+
+## Service Health
+Focused view on only the services and regions that you're using. If a service is experiencing a problem in a region you're not using, it won't show up here.
+
+## Resource Health
+Tailored view of your actual Azure resources. It provides information about the health of your individual cloud resources.
+
+---
+
+### Azure Monitor
+
+**Azure Monitor** maximizes the availability and performance of applications and services by collecting, analyzing, and acting on telemetry from cloud and on-premises environments.
+
+- **Application Insights**
+- **Log Analytics**
+- **Smart Alerts**
+- **Automation Actions**
+- **Customized Dashboards**
+
+---
