@@ -257,3 +257,6 @@ Azure App Services is a fully managed platform to build, deploy, and scale web a
 
 ---
 
+## Azure Storage
+
+
