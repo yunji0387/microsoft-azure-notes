@@ -392,6 +392,36 @@ Azure Storage provides various data services optimized for durability, scalabili
 
 ---
 
+### Azure Data Migration Options
+
+## Azure Migrate
+
+Azure Migrate assists in transitioning on-premises environments to Azure.
+
+- **Unified migration platform**: A single portal for initiating, executing, and monitoring migration to Azure.
+- **Range of tools**: It provides multiple tools for assessment and migration including Azure Migrate: Discovery, assessment, server migration, and more. It also integrates with other Azure services, tools, and independent software vendor (ISV) offerings.
+- **Integrated tools**: Azure Migrate offers various tools such as:
+    - **Azure Migrate: Discovery and assessment**: Assesses servers on VMware, Hyper-V, and physical servers for Azure migration.
+    - **Azure Migrate: Server Migration**: Migrates VMware VMs, Hyper-V VMs, physical servers, other virtualized servers, and public cloud VMs to Azure.
+    - **Data Migration Assistant**: Assesses SQL Servers for migration readiness.
+    - **Azure Database Migration Service**: Migrates databases to Azure.
+    - **Azure App Service migration assistant**: Migrates .NET and PHP web apps to Azure.
+
+## Azure Data Box
+
+Azure Data Box is a physical migration service ideal for transferring large amounts of data.
+
+- **How it works**: Microsoft ships a Data Box storage device to you. You transfer your data to this device, and then ship it back. Microsoft then uploads your data to Azure.
+- **Use cases**: Suitable for data sizes larger than 40 TBs, especially in scenarios with limited network connectivity. This can be used for:
+    - **One-time migration**: Move a significant amount of on-premises data to Azure.
+    - **Periodic uploads**: Transfer large data to Azure at regular intervals.
+    - **Initial bulk transfer**: Do an initial bulk transfer with Data Box followed by incremental transfers over the network.
+- **Data export scenarios**: Data Box can also be used to export data from Azure for purposes like disaster recovery, security requirements, or migrating data back to on-premises.
+
+_Note: Once the data is uploaded to Azure, the disks on the device are wiped clean following NIST 800-88r1 standards._
+
+---
+
 ## Azure Identity, Access, and Security
 
 ???
