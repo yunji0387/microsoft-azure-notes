@@ -259,7 +259,46 @@ Azure App Services is a fully managed platform to build, deploy, and scale web a
 
 ## Azure Storage
 
-???
+### Azure Storage Accounts Overview
+
+Azure Storage Accounts offer various services and are equipped with different redundancy options.
+
+## Introduction
+- A storage account provides a **unique namespace** for Azure Storage data.
+- Accessible globally over HTTP or HTTPS.
+- Ensures **security**, **high availability**, **durability**, and **scalability**.
+
+## Redundancy Options
+- **Locally redundant storage (LRS)**: Basic redundancy option.
+- **Geo-redundant storage (GRS)**: Enhanced geo-redundancy.
+- **Read-access geo-redundant storage (RA-GRS)**: GRS with read access.
+- **Zone-redundant storage (ZRS)**: Redundancy within availability zones.
+- **Geo-zone-redundant storage (GZRS)**: Combination of geo-redundancy and ZRS.
+- **Read-access geo-zone-redundant storage (RA-GZRS)**: GZRS with read access.
+
+## Types of Storage Accounts
+
+| **Type**              | **Supported Services**                              | **Redundancy Options**           | **Usage**                                                       |
+|-----------------------|-----------------------------------------------------|----------------------------------|-----------------------------------------------------------------|
+| Standard general-purpose v2 | Blob Storage, Data Lake Storage, Queue Storage, Azure Files | LRS, GRS, RA-GRS, ZRS, GZRS, RA-GZRS | Ideal for blobs, files shares, queues, tables. |
+| Premium block blobs   | Blob Storage, Data Lake Storage                    | LRS, ZRS                         | Suited for high transaction rates or small objects.              |
+| Premium file shares   | Azure Files                                        | LRS, ZRS                         | For high-performance scale applications.                         |
+| Premium page blobs    | Page blobs only                                    | LRS                             | Exclusive for page blobs.                                        |
+
+## Storage Account Naming Rules
+- Name length: **3 to 24 characters**.
+- Allowed characters: **Numbers** and **lowercase letters** only.
+- Names must be **unique** within Azure.
+
+## Endpoints for Azure Storage Services
+
+- **Blob Storage**: `https://<storage-account-name>.blob.core.windows.net`
+- **Data Lake Storage Gen2**: `https://<storage-account-name>.dfs.core.windows.net`
+- **Azure Files**: `https://<storage-account-name>.file.core.windows.net`
+- **Queue Storage**: `https://<storage-account-name>.queue.core.windows.net`
+- **Table Storage**: `https://<storage-account-name>.table.core.windows.net`
+
+
 
 ---
 
