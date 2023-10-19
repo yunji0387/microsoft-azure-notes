@@ -298,6 +298,42 @@ Azure Storage Accounts offer various services and are equipped with different re
 - **Queue Storage**: `https://<storage-account-name>.queue.core.windows.net`
 - **Table Storage**: `https://<storage-account-name>.table.core.windows.net`
 
+---
+
+### Azure Storage Redundancy Overview
+
+Azure Storage ensures data protection by storing multiple copies. This protection safeguards data against events like hardware failures, outages, and natural disasters. The redundancy choice relies on factors like replication methods, regional disasters protection, and data access in case the primary region is down.
+
+## Redundancy in the Primary Region
+Azure always replicates data thrice in the primary region. The two main options are:
+
+### Locally Redundant Storage (LRS)
+- Replicates data three times within one data center in the primary region.
+- Durability: 99.999999999% annually.
+- Affordable but riskier due to vulnerability to large-scale disasters.
+
+### Zone-Redundant Storage (ZRS)
+- Replicates data across three Azure availability zones.
+- Durability: 99.9999999999% annually.
+- Maintains data accessibility even if a zone is down.
+
+## Redundancy in a Secondary Region
+For high durability, data can be replicated to a secondary region distant from the primary. Available options are:
+
+### Geo-Redundant Storage (GRS)
+- Uses LRS in primary and asynchronously replicates to LRS in a secondary region.
+- Durability: 99.99999999999999% annually.
+
+### Geo-Zone-Redundant Storage (GZRS)
+- Combines ZRS in primary and LRS in secondary.
+- Durability: 99.99999999999999% annually.
+
+### Data Access in Secondary Region
+- GRS and GZRS replicate data to another region for regional outages protection.
+- Data in secondary is readable only during a failover unless read-access is enabled.
+- Options for read access: Read-Access Geo-Redundant Storage (RA-GRS) and Read-Access Geo-Zone-Redundant Storage (RA-GZRS).
+
+> **Note**: Data in the secondary region might be outdated due to Recovery Point Objective (RPO).
 
 
 ---
