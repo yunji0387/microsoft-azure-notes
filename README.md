@@ -452,7 +452,95 @@ Azure offers several tools to handle individual files or smaller file groups in 
 
 ## Azure Identity, Access, and Security
 
-???
+### Azure Directory Services
+
+## **Microsoft Entra ID**
+- Cloud-based identity and access management service from Microsoft.
+- Works alongside on-premises Active Directory.
+- Provides global accessibility with user-managed identity accounts.
+
+**Key Features**:
+- **Authentication**: Includes identity verification, self-service password reset, multifactor authentication, and more.
+- **Single Sign-on (SSO)**: One username and password for multiple applications.
+- **Application Management**: For cloud and on-premises apps.
+- **Device Management**: Register and manage devices, integrating with tools like Microsoft Intune.
+
+**Who uses it?**
+- IT Administrators
+- App Developers
+- End Users
+- Microsoft 365, Office 365, Azure, and Dynamics CRM Online subscribers.
+
+## **Connecting On-Premises AD with Microsoft Entra ID**
+- Maintain consistent identity experience between cloud and on-premises.
+- **Microsoft Entra Connect**: Synchronizes user identities between on-premises AD and Microsoft Entra ID.
+
+## **Microsoft Entra Domain Services**
+- Provides managed domain services like domain join, group policy, LDAP, and authentication.
+- Ideal for legacy applications in the cloud that need domain services.
+- Integrates with existing Microsoft Entra tenant.
+
+**How it works**:
+- Creates a unique namespace (domain name) with two Windows Server domain controllers deployed in an Azure region.
+- Azure manages, configures, and updates these domain controllers.
+- One-way synchronization from Microsoft Entra ID to Microsoft Entra Domain Services.
+
+> **Note**: Resources can be created in the managed domain but aren't synced back to Microsoft Entra ID.
+
+---
+
+### Azure Authentication Methods
+
+**Authentication** is like presenting ID when traveling: proving one's identity.
+
+## Azure Supported Authentication Methods:
+- **Standard Passwords**
+- **Single Sign-On (SSO)**
+- **Multifactor Authentication (MFA)**
+- **Passwordless**
+
+> Security vs. Convenience: 
+> - Passwordless: High Security & High Convenience.
+> - Passwords + 2FA: High Security & Low Convenience.
+
+## Single Sign-On (SSO)
+
+Allows a user to sign in once and access multiple resources.
+- Reduces passwords to remember.
+- Simplifies security model.
+- Less strain on IT management.
+
+> **Note**: SSO's security is based on the security of the initial authenticator.
+
+## Multifactor Authentication (MFA)
+
+Requires two or more elements to authenticate. Categories:
+1. **Something the user knows** - e.g., a challenge question.
+2. **Something the user has** - e.g., a code to a mobile phone.
+3. **Something the user is** - e.g., fingerprint or face scan.
+
+> MFA limits the impact of credential exposure and provides added security benefits.
+
+## Microsoft Entra Multifactor Authentication
+
+A service offering multifactor authentication with options like phone call or mobile app notifications.
+
+## Passwordless Authentication
+
+Removes password and replaces it with:
+1. Something you have (e.g., registered device).
+2. Plus something you know or are (e.g., PIN or fingerprint).
+
+**Azure Passwordless Options**:
+- **Windows Hello for Business**: Tied to user's PC, supports SSO.
+- **Microsoft Authenticator App**: Turns phones into passwordless credentials.
+- **FIDO2 Security Keys**: Standards-based passwordless method.
+
+> FIDO2 keys can be USB, Bluetooth, or NFC. They enhance security by eliminating password exposure.
+
+---
+
+
 
 ---
 
