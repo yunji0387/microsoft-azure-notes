@@ -736,9 +736,59 @@ Azure offers tools and features for each defense-in-depth layer, ensuring compre
 
 ---
 
-### Cost Management in Azure
+## Cost Management in Azure
 
-???
+### Azure Costing Overview
+
+Azure allows you to transition from CapEx to OpEx by renting infrastructure such as compute, storage, and networking.
+
+### Factors Impacting OpEx Cost:
+
+- **Resource Type**: The cost depends on resource settings, type, and Azure region.
+    - **Example**: Different storage account settings like blob type, performance tier, access tier, etc. can vary in cost.
+    - **Example**: VM costs can depend on software licensing, VM specs, attached storage, and network interface.
+
+- **Consumption**: Pay-as-you-go model. You pay based on your usage.
+    - Azure also offers **reserved capacity** with discounts if you commit to resources for 1 or 3 years.
+
+- **Maintenance**: Ensuring unused resources are de-provisioned can control costs.
+
+- **Geography**: Resource deployment region can affect cost due to variations in power, labor, taxes, etc.
+    - Network traffic costs also depend on geographic considerations.
+
+- **Network Traffic**: Cost depends on data moving in and out of Azure datacenters.
+    - Some inbound transfers are free.
+    - Outbound data transfer pricing is zone-based.
+
+- **Subscription Type**: Some subscriptions offer usage allowances.
+    - **Example**: Azure free trial provides 12 months of access to certain products and a 30-day credit.
+
+- **Azure Marketplace**: You can buy Azure-based solutions from third-party vendors. Pricing might include the cost for Azure services and third-party expertise.
+
+> All Azure Marketplace solutions are certified and compliant with Azure policies.
+
+---
+
+### Comparison: Pricing vs. TCO Calculators
+
+### Pricing Calculator
+- **Purpose**: Provide an estimated cost for provisioning resources in Azure.
+- **Features**:
+    - Estimate costs for individual resources or build out a solution.
+    - Account for various resource types like compute, storage, and network.
+    - Options include storage type, access tier, and redundancy.
+    - _Note_: The calculator is for informational purposes. Prices are estimates and no actual provisioning happens.
+    
+### TCO (Total Cost of Ownership) Calculator
+- **Purpose**: Compare costs of running infrastructure on-premises vs. Azure Cloud.
+- **Features**:
+    - Input current infrastructure configuration, such as servers, databases, and network traffic.
+    - Includes assumptions like power and IT labor costs.
+    - Presents an estimated cost difference between on-premises and Azure.
+
+---
+
+##
 
 ---
 
