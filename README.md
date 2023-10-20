@@ -607,8 +607,6 @@ Azure RBAC is a method in Azure that enables the management of access to cloud r
 - Uses predefined roles with set permissions or allows custom roles.
 - Assigning roles to individuals/groups grants them the role's permissions.
 
-![Roles and Scopes Diagram](Insert_the_link_to_your_diagram_here)
-
 ## Scopes in Azure RBAC
 - Scopes determine where the access rules apply.
 - **Types of Scopes:**
@@ -629,7 +627,112 @@ Azure RBAC is a method in Azure that enables the management of access to cloud r
 
 ---
 
-##
+### Zero Trust Model
+
+Zero Trust is a forward-thinking security model designed for modern-day challenges, emphasizing the assumption of breach and verification for each request, regardless of its origin.
+
+## Key Concepts
+- **Assumption of Breach:** All requests are treated as though they're coming from potentially compromised sources.
+- **Protection:** Safeguarding resources by anticipating the worst-case scenario.
+
+## Guiding Principles of Zero Trust
+1. **Verify Explicitly:** Authenticate and authorize based on comprehensive data.
+2. **Least Privilege Access:** Use Just-In-Time and Just-Enough-Access (JIT/JEA) and adaptive risk-based policies.
+3. **Assume Breach:** Focus on minimizing potential damage, use end-to-end encryption, and leverage analytics for threat detection.
+
+## Transitioning to Zero Trust
+- **Traditional Model:** Restricted corporate networks, tight control over VPN access, and limited personal device usage.
+- **Zero Trust Approach:** No assumptions based on device location; emphasizes authentication for every device and user.
+
+---
+
+### Defense-in-Depth
+
+Defense-in-depth aims to safeguard information by using multiple layers of security to slow down an attacker's unauthorized data access.
+
+## Layers of Defense-in-Depth
+Visualize defense-in-depth as concentric circles with data at the core, surrounded by protective layers.
+
+### 1. **Physical Security**
+   - Primary defense: safeguard physical access to hardware.
+   - Microsoft cloud datacenters employ physical security measures.
+
+### 2. **Identity and Access**
+   - Secure identities and control access.
+   - Employ single sign-on (SSO) and multifactor authentication.
+   - Log sign-in events and changes.
+
+### 3. **Perimeter**
+   - Protect against network attacks.
+   - Utilize DDoS protection and perimeter firewalls.
+
+### 4. **Network**
+   - Limit connectivity across resources.
+   - Employ "deny by default" principle and restrict internet access.
+
+### 5. **Compute**
+   - Focus on secure compute resources.
+   - Control VM access, apply endpoint protection, and keep systems updated.
+
+### 6. **Application**
+   - Embed security in the application development lifecycle.
+   - Ensure applications are secure by default and store sensitive secrets safely.
+
+### 7. **Data**
+   - Secure data access and storage, meeting regulatory requirements.
+   - Attackers typically target data in databases, VMs, or SaaS applications.
+
+Azure offers tools and features for each defense-in-depth layer, ensuring comprehensive protection.
+
+---
+
+### Microsoft Defender for Cloud Overview
+
+## Introduction
+- **Defender for Cloud** is a security posture management and threat protection tool.
+- Monitors cloud, on-premises, hybrid, and multi-cloud environments.
+- Integrated natively with Azure for easy deployment.
+
+## Key Features
+
+### Protection Everywhere
+- Native Azure service monitoring.
+- Log Analytics agent for security data collection.
+- Supports hybrid and multi-cloud via Azure Arc.
+- CSPM extended to multi-cloud without agent needs.
+
+### Azure-Native Protections
+- **PaaS Services**: Detect threats for Azure services like App Service, SQL, Storage Account.
+- **Data Services**: Auto-classify data in Azure SQL and get vulnerability assessments.
+- **Networks**: Limit exposure to brute force attacks and secure VM ports.
+
+### Defending Hybrid Resources
+- Protect non-Azure servers.
+- Deploy Azure Arc for enhanced security in on-premises environments.
+
+### Protection on Other Clouds
+- Support for AWS and GCP.
+- CSPM features for AWS resources and specific AWS security recommendations.
+- **Defender for Containers** and **Defender for Servers** for AWS services.
+
+## Core Pillars
+1. **Continuously Assess**: Regular detailed vulnerability scans.
+2. **Secure**: Tailored security policies with Azure Policy controls.
+3. **Defend**: Security alerts and advanced threat protection.
+
+### Continuous Assessment
+- Vulnerability assessments for VMs, container registries, SQL servers.
+- Integration with Microsoft Defender for Endpoint for vulnerability findings.
+
+### Securing Resources
+- Set security policies for management groups, subscriptions, tenants.
+- Monitor new resources for security best practices.
+- **Azure Security Benchmark** for security and compliance best practices.
+
+### Defending Resources
+- Security alerts with remediation steps.
+- **Fusion Kill-Chain Analysis** for understanding attack campaigns.
+- Advanced threat protection for VMs, SQL databases, containers, web apps, and networks.
 
 ---
 
