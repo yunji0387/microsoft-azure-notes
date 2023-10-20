@@ -570,6 +570,30 @@ With Microsoft Entra ID's B2B feature, you can:
 
 ---
 
+### Azure Conditional Access
+
+Conditional Access is a capability in Microsoft Entra ID, determining access to resources based on identity signals.
+
+## Key Points
+- **Purpose:** Grant or deny access based on identity signals like user identity, location, and device.
+- **Benefits for IT Administrators:**
+  - Enable productivity anywhere, anytime.
+  - Safeguard organizational assets.
+  - Fine-tuned multifactor authentication experiences.
+- **Access Process:** During sign-in, Conditional Access gathers signals, decides based on them, and enforces the decision.
+- **Signals:** Examples include user location, device, or the application they're accessing.
+- **Decisions:** Could be granting full access from a familiar location or requiring additional authentication from unfamiliar or high-risk locations.
+- **Enforcement:** Implementing the decision, e.g., allowing access or demanding a second form of authentication.
+
+## Use Cases for Conditional Access
+
+1. **Multifactor Authentication (MFA):** Depending on requester's role, location, or network. E.g., MFA for admins but not for standard users or for external connections.
+2. **Approved Client Applications:** Restricting access only through sanctioned apps. E.g., defining allowed email applications.
+3. **Managed Devices:** Ensuring users access applications only from devices that adhere to security and compliance standards.
+4. **Block Untrusted Sources:** Denying access from unfamiliar or risky locations.
+
+---
+
 ##
 
 ---
