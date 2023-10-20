@@ -540,7 +540,37 @@ Removes password and replaces it with:
 
 ---
 
+### Azure External Identities
 
+External identity refers to any entity outside an organization. With Microsoft Entra External ID, securely collaborate with users outside your organization or manage customer identity experiences in consumer-facing apps.
+
+- External users can bring their own identities, e.g., Google, Facebook, or corporate credentials.
+- Their identity provider manages their identity; you control access with Microsoft Entra ID or Azure AD B2C.
+
+## Key Capabilities
+
+### 1. **Business to Business (B2B) Collaboration**
+   - Let external users sign-in with their preferred identity to your applications.
+   - External users appear as guest users in your directory.
+
+### 2. **B2B Direct Connect**
+   - Establish a two-way trust with another Microsoft Entra organization.
+   - Enables external users to access your resources within their Teams. 
+   - Users aren't in your directory but visible in Teams shared channel.
+
+### 3. **Microsoft Entra Business to Customer (B2C)**
+   - Publish apps to consumers using Azure AD B2C for identity and access management.
+
+Use a combination of these capabilities based on your collaboration needs.
+
+With Microsoft Entra ID's B2B feature, you can:
+- Enable collaboration across organizations.
+- Invite guest users from other tenants.
+- Ensure guest users have appropriate access through access reviews.
+
+---
+
+##
 
 ---
 
