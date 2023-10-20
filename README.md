@@ -788,7 +788,51 @@ Azure allows you to transition from CapEx to OpEx by renting infrastructure such
 
 ---
 
-##
+### Microsoft Cost Management Tool Overview
+
+### What is Cost Management?
+- Provides the ability to check Azure resource costs, set alerts based on spend, and establish budgets for automated resource management.
+- **Cost Analysis**: A feature for visualizing Azure costs by billing cycle, region, resource, etc. It helps analyze organizational costs, understand spending trends, and estimate future costs against a budget.
+
+### Cost Alerts
+- Central location to check all alert types in Cost Management.
+    - **Budget Alerts**: Notify when spending reaches/exceeds a set amount. Budgets can be created in Azure portal or via Azure Consumption API. Alert emails are sent when conditions are met.
+    - **Credit Alerts**: Notify when Azure credit commitments are used up. Alerts generated at 90% and 100% of credit balance.
+    - **Department Spending Quota Alerts**: Notify when department spending reaches a preset quota threshold. Emails are sent to department owners.
+
+### Budgets
+- Set spending limits for Azure based on different criteria like subscription, resource group, etc.
+- Budget alerts are triggered when spending reaches a set threshold. They can also initiate automation to modify resources if configured.
+
+---
+
+### Purpose of Tags in Azure
+
+### Overview
+- Tags provide **metadata** about resources.
+- They help in organization, especially as cloud usage grows.
+
+### Key Uses for Tags:
+1. **Resource Management**: Locate and group resources by workloads, environments, business units, etc.
+2. **Cost Management & Optimization**: Group resources for cost reporting, budget tracking, and cost forecasting.
+3. **Operations Management**: Group by criticality for service-level agreements (SLAs).
+4. **Security**: Classify data security levels (e.g., public, confidential).
+5. **Governance & Compliance**: Identify resources for governance or regulatory compliance.
+6. **Workload Optimization & Automation**: Visualize resources in complex deployments for automation tasks.
+
+### Managing Resource Tags:
+- Add, modify, or delete tags using PowerShell, Azure CLI, Azure Resource Manager templates, REST API, or Azure portal.
+- Use **Azure Policy** to enforce tagging rules.
+- Tags don't inherit from subscriptions or resource groups; they allow custom tagging schemas at different levels.
+
+### Example Tagging Structure:
+- `AppName`: Name of the application.
+- `CostCenter`: Internal cost center code.
+- `Owner`: Business owner responsible for the resource.
+- `Environment`: Environment name (e.g., "Prod," "Dev").
+- `Impact`: Resource's business impact (e.g., "Mission-critical," "High-impact").
+
+> **Note**: Not all resources need specific tags. E.g., Only mission-critical resources might have the 'Impact' tag.
 
 ---
 
