@@ -594,6 +594,41 @@ Conditional Access is a capability in Microsoft Entra ID, determining access to 
 
 ---
 
+### Azure Role-Based Access Control (Azure RBAC)
+
+Azure RBAC is a method in Azure that enables the management of access to cloud resources based on roles.
+
+## Principle of Least Privilege
+- Only grant access to the level necessary for a task.
+- Example: Only read access for a specific storage blob if that's all that's needed.
+
+## Azure RBAC Overview
+- Manages permissions at the team level rather than individual.
+- Uses predefined roles with set permissions or allows custom roles.
+- Assigning roles to individuals/groups grants them the role's permissions.
+
+![Roles and Scopes Diagram](Insert_the_link_to_your_diagram_here)
+
+## Scopes in Azure RBAC
+- Scopes determine where the access rules apply.
+- **Types of Scopes:**
+  - Management group (multiple subscriptions).
+  - Single subscription.
+  - Resource group.
+  - Single resource.
+
+## Hierarchy of Azure RBAC
+- Permissions are inherited from parent scopes to child scopes.
+  - Example: Owner role at the management group level allows management of everything in all subscriptions within that group.
+
+## Enforcement of Azure RBAC
+- Enforced on actions against Azure resources via Azure Resource Manager.
+- Access through Azure portal, Azure Cloud Shell, Azure PowerShell, and Azure CLI.
+- **Note:** Azure RBAC doesn't manage access at application/data level. Application security must be handled separately.
+- Uses an **allow model**; assigned roles determine permitted actions.
+
+---
+
 ##
 
 ---
